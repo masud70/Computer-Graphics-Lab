@@ -1,0 +1,11 @@
+{
+	"configurations": [
+		{
+			"name": "Win32",
+			"includePath": ["${workspaceFolder}/**", "C:/TDM-GCC-32/include"],
+			"defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+			"compilerPath": "C://TDM-GCC-32\\bin\\g++"
+		}
+	],
+	"version": 4
+}

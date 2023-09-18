@@ -1,0 +1,55 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "C/C++: Build and Run .exe",
+			"dependsOrder": "sequence",
+			"dependsOn": ["C/C++: Build .exe", "C/C++: Run .exe"]
+		},
+		{
+			"type": "process",
+			"label": "C/C++: Build .exe",
+			"command": "C:\\TDM-GCC-32\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${workspaceFolder}\\Home\\build\\${fileBasenameNoExtension}.exe",
+				"-lbgi",
+				"-lgdi32",
+				"-lcomdlg32",
+				"-luuid",
+				"-loleaut32",
+				"-lole32"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"detail": "compiler: C:\\TDM-GCC-32\\bin\\g++.exe",
+			"presentation": {
+				"reveal": "always"
+			}
+		},
+		{
+			"label": "C/C++: Run .exe",
+			"type": "shell",
+			"command": "${workspaceFolder}\\Home\\build\\${fileBasenameNoExtension}.exe",
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"dependsOn": ["C/C++: Build .exe"],
+			"presentation": {
+				"reveal": "always"
+			}
+		}
+	]
+}

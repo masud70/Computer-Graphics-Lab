@@ -1,0 +1,12 @@
+{
+	"files.associations": {
+		"BLE.C": "cpp",
+		"DDA.C": "cpp",
+		"DLE.C": "cpp",
+		"BCA.C": "cpp",
+		"MCA.C": "cpp",
+		"PCA.C": "cpp",
+		"TCA.C": "cpp",
+		"ostream": "cpp"
+	}
+}

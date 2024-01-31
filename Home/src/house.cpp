@@ -18,7 +18,7 @@ int main(){
     initialization();
     
     int shade[] = {150, 50, 450, 50, 500, 100, 100, 100, 150, 50};
-    drawpoly(5, shade);
+    drawpoly(sizeof(shade)/sizeof(int)/2, shade);
     for(int i=150, j=100; i<450; i+=6, j+=8){
         line(i, 50, j, 100);
     }
@@ -35,14 +35,12 @@ int main(){
     // Door
     rectangle(250, 100, 350, 300);
     line(300, 100, 300, 300);
-    for(int i=1;i<=7; i++)
-    circle(300, 200, i);
+    setfillstyle(1, BLACK);
+    fillellipse(300, 200, 7, 7);
 
     // Stair
     rectangle(150, 300, 450, 320);
-    bar3d(250-20, 320+10, 350-20, 370+10, 20, 1);
-
-
+    bar3d(250-20, 320+10, 350-20, 370+10, 20, 2);
     
     getch();
     closegraph();

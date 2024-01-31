@@ -29,7 +29,6 @@ int main(){
     }
     rectangle(220, 210, 230, 250);
     rectangle(370, 210, 380, 250);
-    setfillstyle(1, BLACK);
     floodfill(221, 211, BLACK);
     floodfill(371, 211, BLACK);
     rectangle(295, 325, 305, 370);
